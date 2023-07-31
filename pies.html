@@ -67,18 +67,18 @@
 
           const order = {
             id: button.getAttribute("data-order"),
-            title: container.getAttribute(".title").innerText,
-            price: container.getAttribute(".price").innerText,
-            desc: container.getAttribute(".desc").innerText
+            title: container.querySelector(".title").innerText,
+            price: container.querySelector(".price").innerText,
+            desc: container.querySelector(".desc").innerText
           };
 
           localStorage.setItem("order", JSON.stringify(order));
 
           const url = window.location.href.replace("pies.html", "order.html");
           window.location.href = url;
-        })
-      });
+        });
 
-    })
+      });
+    });
   </script>
 </html>

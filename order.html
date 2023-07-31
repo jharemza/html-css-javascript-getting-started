@@ -6,7 +6,35 @@
   <link rel="stylesheet" href="site.css" type="text/css" />
   <title>Order | Bethany's Pie Shop</title>
   <style>
-    
+    .input-group{
+      margin-bottom: 20px;
+    }
+
+    .input-group input,
+    .input-group textarea,
+    .input-group select {
+      padding: 10px;
+      border: solid 1px #999;
+      border-radius: 2px;
+      width: 100%;
+    }
+
+    label{
+      font-weight: 600;
+    }
+
+    input[type="reset"] {
+      background: transparent;
+      border: 0;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    input[type="submit"] {
+      border: solid 1px #999;
+      border-radius: 3px;
+      padding: 10px;
+    }
   </style>
 </head>
 <body>
@@ -117,7 +145,7 @@
         </div>
 
         <input type="reset" value="Reset">
-        <input type="submit" value="Submit">
+        <input type="submit" value="Order">
 
       </form>
     </article>
